@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Café Noir – Good Coffee. Better Mood.",
+  "short_name": "Café Noir",
+  "description": "Discover handcrafted coffee, delicious desserts, fresh food, and a cozy space to sip, relax, and repeat.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F7F6E3",
+  "theme_color": "#F7F6E3",
+  "icons": [
+    {
+      "src": "/seo/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/seo/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/seo/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

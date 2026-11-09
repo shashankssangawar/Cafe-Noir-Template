@@ -1,7 +1,9 @@
+import HeroSection from "@/components/sections/hero";
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-2xl font-semibold">Cafe</h1>
+    <main className="relative overflow-hidden">
+      <HeroSection />
     </main>
   );
 }

@@ -6,6 +6,7 @@
   --cafe-noir: #4E351E;
   --coffee: #6c5234;
   --grullo: #afa386;
+  --golden-pastel: #F9DC78;
 }
 
 @theme inline {
@@ -14,16 +15,28 @@
   --color-cafe-noir: var(--cafe-noir);
   --color-coffee: var(--coffee);
   --color-grullo: var(--grullo);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-golden-pastel: var(--golden-pastel);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
   background: var(--old-lace);
   color: var(--cafe-noir);
   font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
 }
 
 h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Serif Display', serif;
+}
+
+.navbar-scrolled {
+  background-color: rgba(251, 245, 234, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(42, 35, 32, 0.06);
 }
