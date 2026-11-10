@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import LeafRightOldLace from "../svg/leaf-right-golden-pastel";
 import { PAGE } from "@/constants/seo/links";
@@ -25,7 +25,11 @@ export default function Footer() {
     hidden: { opacity: 0, y: reduce ? 0 : 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.7, ease } },
   };
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(null);
+
+  useEffect(() => {
+    setDate(new Date());
+  }, []);
 
   return (
     <footer id="contact" className="relative overflow-hidden bg-cafe-noir text-old-lace">
