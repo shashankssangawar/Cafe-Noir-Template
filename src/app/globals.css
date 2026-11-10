@@ -7,6 +7,8 @@
   --coffee: #6c5234;
   --grullo: #afa386;
   --golden-pastel: #F9DC78;
+  --line: #e6e1c8;
+  --card: #fcfbf0;
 }
 
 @theme inline {
@@ -16,6 +18,8 @@
   --color-coffee: var(--coffee);
   --color-grullo: var(--grullo);
   --color-golden-pastel: var(--golden-pastel);
+  --color-line: var(--line);
+  --color-card: var(--card);
 }
 
 @media (prefers-reduced-motion: reduce) {

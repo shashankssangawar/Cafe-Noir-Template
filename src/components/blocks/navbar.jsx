@@ -1,10 +1,8 @@
 'use client';
 
-import { COMMON_IMAGES_LINKS, COMMON_IMAGES_SEO } from "@/constants/seo/image";
 import { PAGE } from "@/constants/seo/links";
 import { AnimatePresence, MotionConfig, motion } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -85,7 +83,7 @@ export default function Navbar() {
   const navLinks = [
     { href: PAGE.LINKS.HERO, label: "Home", description: PAGE.SEO.HERO },
     { href: PAGE.LINKS.MENU, label: "Menu", description: PAGE.SEO.MENU },
-    { href: PAGE.LINKS.ABOUT, label: "About", description: PAGE.SEO.ABOUT },
+    { href: PAGE.LINKS.OUR_STORY, label: "About", description: PAGE.SEO.ABOUT },
     { href: PAGE.LINKS.SPECIALS, label: "Specials", description: PAGE.SEO.SPECIALS },
     { href: PAGE.LINKS.CONTACT_US, label: "Contact", description: PAGE.SEO.CONTACT_US },
   ];
@@ -103,7 +101,7 @@ export default function Navbar() {
           variants={navRow}
           className="max-w-350 mx-auto flex items-center justify-between px-6 md:px-10 py-5"
         >
-          <motion.h1 variants={fromLeft} className="text-5xl font-black">
+          <motion.h1 variants={fromLeft} className="md:text-5xl text-2xl font-black">
             Café Noir
           </motion.h1>
 
@@ -163,7 +161,7 @@ export default function Navbar() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-55 bg-charcoal/40 lg:hidden"
+              className="fixed inset-0 z-55 bg-old-lace lg:hidden"
             />
 
             <motion.aside
@@ -175,15 +173,9 @@ export default function Navbar() {
               className="fixed top-0 right-0 h-screen w-full bg-ivory shadow-2xl z-60 lg:hidden"
             >
               <div className="flex items-center justify-between p-6 border-b">
-                <Image
-                  src={COMMON_IMAGES_LINKS.LOGO}
-                  width={1000}
-                  height={1000}
-                  alt="Logo"
-                  title={COMMON_IMAGES_SEO.LOGO}
-                  className="h-10 w-auto"
-                  loading="lazy"
-                />
+                <motion.h1 variants={fromLeft} className="text-2xl font-black">
+                  Café Noir
+                </motion.h1>
 
                 <motion.button
                   whileTap={{ scale: 0.9, rotate: 90 }}
