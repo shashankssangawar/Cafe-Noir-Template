@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import LeafRightOldLace from "../svg/leaf-right-golden-pastel";
 import { PAGE } from "@/constants/seo/links";
@@ -24,6 +25,7 @@ export default function Footer() {
     hidden: { opacity: 0, y: reduce ? 0 : 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.7, ease } },
   };
+  const [date, setDate] = useState(new Date());
 
   return (
     <footer id="contact" className="relative overflow-hidden bg-cafe-noir text-old-lace">
@@ -70,7 +72,7 @@ export default function Footer() {
           className="mb-5 mt-10 h-px origin-left bg-old-lace/20"
         />
         <motion.div variants={item} className="flex flex-wrap items-center justify-between gap-3 text-[13px] text-old-lace/80">
-          <p>© {new Date().getFullYear()} Café Noir. All rights reserved.</p>
+          <p>© {date?.getFullYear() || '2026'} Café Noir. All rights reserved.</p>
           <p className="flex items-center gap-3">
             <a href="#privacy" className="hover:text-golden-pastel focus-visible:outline-2 focus-visible:outline-golden-pastel">Privacy Policy</a>
             <span aria-hidden="true" className="h-3 w-px bg-old-lace/40" />
