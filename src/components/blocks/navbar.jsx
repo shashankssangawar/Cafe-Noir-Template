@@ -83,7 +83,7 @@ export default function Navbar() {
   const navLinks = [
     { href: PAGE.LINKS.HERO, label: "Home", description: PAGE.SEO.HERO },
     { href: PAGE.LINKS.MENU, label: "Menu", description: PAGE.SEO.MENU },
-    { href: PAGE.LINKS.OUR_STORY, label: "About", description: PAGE.SEO.ABOUT },
+    { href: PAGE.LINKS.ABOUT, label: "About", description: PAGE.SEO.ABOUT },
     { href: PAGE.LINKS.SPECIALS, label: "Specials", description: PAGE.SEO.SPECIALS },
     { href: PAGE.LINKS.CONTACT_US, label: "Contact", description: PAGE.SEO.CONTACT_US },
   ];

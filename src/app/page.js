@@ -18,12 +18,12 @@ export default function Home() {
       <OurStory />
       <Team />
       <OurValues
-        image={COMMON_IMAGES_LINKS.VALUE}
-        imageSeo={COMMON_IMAGES_SEO.VALUE}
+        image={COMMON_IMAGES_LINKS.HOME.VALUE}
+        imageSeo={COMMON_IMAGES_SEO.HOME.VALUE}
       />
       <TodaySpecial
-        image={COMMON_IMAGES_LINKS.SPECIAL}
-        imageSeo={COMMON_IMAGES_SEO.SPECIAL}
+        image={COMMON_IMAGES_LINKS.HOME.SPECIAL}
+        imageSeo={COMMON_IMAGES_SEO.HOME.SPECIAL}
       />
       <Newsletter />
       <Contact />

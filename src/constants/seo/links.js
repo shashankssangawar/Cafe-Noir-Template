@@ -3,7 +3,7 @@ export const PAGE = {
     HERO: "/#hero",
     MENU: "/#menu",
     OUR_STORY: "/#our-story",
-    ABOUT: "/#about",
+    ABOUT: "/about",
     SPECIALS: "/#specials",
     GALLERY: "/#gallery",
     RESERVATIONS: "/#reservations",

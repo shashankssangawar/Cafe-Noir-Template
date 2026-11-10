@@ -135,11 +135,11 @@ export default function HeroSection() {
         onAnimationComplete={() => setImageDone(true)}
       >
         <Image
-          src={COMMON_IMAGES_LINKS.HERO.MAIN}
+          src={COMMON_IMAGES_LINKS.HOME.HERO.MAIN}
           width={1000}
           height={1000}
           alt="Logo"
-          title={COMMON_IMAGES_SEO.HERO.MAIN}
+          title={COMMON_IMAGES_SEO.HOME.HERO.MAIN}
           className="absolute inset-0 w-full h-full object-cover"
           priority
         />

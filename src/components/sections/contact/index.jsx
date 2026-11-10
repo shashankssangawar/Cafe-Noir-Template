@@ -153,9 +153,9 @@ export default function Contact({ heroImage, sideImage, mapEmbedSrc, onSubmit })
       <div className="relative overflow-hidden bg-cafe-noir text-old-lace">
         <div className="absolute top-0 right-0">
           <img
-            src={COMMON_IMAGES_LINKS.CONTACT.BACKGROUND}
-            alt={COMMON_IMAGES_SEO.CONTACT.BACKGROUND}
-            title={COMMON_IMAGES_SEO.CONTACT.BACKGROUND}
+            src={COMMON_IMAGES_LINKS.HOME.CONTACT.BACKGROUND}
+            alt={COMMON_IMAGES_SEO.HOME.CONTACT.BACKGROUND}
+            title={COMMON_IMAGES_SEO.HOME.CONTACT.BACKGROUND}
             className="md:w-[500px] w-[300px] object-contain"
           />
         </div>
@@ -213,9 +213,9 @@ export default function Contact({ heroImage, sideImage, mapEmbedSrc, onSubmit })
             className="h-[280px] overflow-hidden rounded-3xl bg-cafe-noir md:h-auto md:min-h-[420px]"
           >
             <img
-              src={COMMON_IMAGES_LINKS.CONTACT.LATTE}
-              alt={COMMON_IMAGES_SEO.CONTACT.LATTE}
-              title={COMMON_IMAGES_SEO.CONTACT.LATTE}
+              src={COMMON_IMAGES_LINKS.HOME.CONTACT.LATTE}
+              alt={COMMON_IMAGES_SEO.HOME.CONTACT.LATTE}
+              title={COMMON_IMAGES_SEO.HOME.CONTACT.LATTE}
               className="block size-full object-cover"
             />
           </motion.div>

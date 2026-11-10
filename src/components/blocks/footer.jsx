@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1];
 const LINKS = [
   { label: "Home", href: PAGE.LINKS.HERO },
   { label: "Menu", href: PAGE.LINKS.MENU },
-  { label: "About", href: PAGE.LINKS.OUR_STORY },
+  { label: "About", href: PAGE.LINKS.ABOUT },
   { label: "Specials", href: PAGE.LINKS.SPECIALS },
   { label: "Contact", href: PAGE.LINKS.CONTACT_US },
 ];
