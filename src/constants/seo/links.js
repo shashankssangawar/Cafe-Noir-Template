@@ -1,11 +1,11 @@
 export const PAGE = {
   LINKS: {
     HERO: "/#hero",
-    MENU: "/#menu",
+    MENU: "/menu",
     OUR_STORY: "/#our-story",
     ABOUT: "/about",
     SPECIALS: "/#specials",
-    GALLERY: "/#gallery",
+    GALLERY: "/gallery",
     RESERVATIONS: "/#reservations",
     CONTACT_US: "/#contact",
     NEWSLETTER: "/#newsletter",

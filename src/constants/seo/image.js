@@ -1,5 +1,6 @@
 export const COMMON_IMAGES_SEO = {
   LOGO: 'Café Noir',
+
   // Home Page (/)
   HOME: {
     HERO: {
@@ -29,7 +30,12 @@ export const COMMON_IMAGES_SEO = {
   // Menu (/menu)
   MENU: {
     MAIN: 'Latte image'
-  }
+  },
+
+  // Gallery (/gallery)
+  GALLERY: {
+    MAIN: 'Warm café interior with plants and pendant lights'
+  },
 }
 
 export const COMMON_IMAGES_LINKS = {
@@ -65,5 +71,11 @@ export const COMMON_IMAGES_LINKS = {
   // Menu (/menu)
   MENU: {
     MAIN: '/menu/main.jpg'
-  }
+  },
+
+  // Gallery (/gallery)
+  GALLERY: {
+    MAIN: '/gallery/main.jpg'
+  },
+
 }
