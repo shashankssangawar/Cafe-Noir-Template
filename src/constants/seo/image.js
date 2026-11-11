@@ -21,14 +21,21 @@ export const COMMON_IMAGES_SEO = {
 
   // About (/about)
   ABOUT: {
-    MAIN: '',
+    MAIN: 'A cafe-interior image',
     OUR_JOURNEY: 'Warm café interior with plants and pendant lights',
     PHILOSOPHY: 'Barista pouring steamed milk into a latte',
   },
+
+  // Menu (/menu)
+  MENU: {
+    MAIN: 'Latte image'
+  }
 }
 
 export const COMMON_IMAGES_LINKS = {
   LOGO: '/seo/logo.png',
+
+  // Home Page (/)
   HOME: {
     HERO: {
       // MAIN: '/hero/main.jpg'
@@ -47,9 +54,16 @@ export const COMMON_IMAGES_LINKS = {
     },
     SPECIAL: '/special/today.png',
   },
+
+  // About (/about)
   ABOUT: {
     MAIN: '/about-us/main.jpg',
     OUR_JOURNEY: '/our-journey/cafe-interior.jpg',
     PHILOSOPHY: '/philosophy/barista-latte.jpg',
   },
+
+  // Menu (/menu)
+  MENU: {
+    MAIN: '/menu/main.jpg'
+  }
 }

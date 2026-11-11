@@ -50,8 +50,7 @@ const FILTERS = ["All", "Hot", "Iced"];
 const SIZES = [{ k: "S", add: 0 }, { k: "M", add: 0.6 }, { k: "L", add: 1.2 }];
 const spring = { type: "spring", stiffness: 320, damping: 30 };
 
-const pillBtn =
-  "relative rounded-full px-5 py-2 font-medium transition-colors focus-visible:outline-2 focus-visible:outline-ebony";
+const pillBtn = "relative rounded-full px-5 py-2 font-medium transition-colors focus-visible:outline-2 focus-visible:outline-coffee";
 const artBg = "bg-[radial-gradient(circle_at_50%_60%,#efe9c9,transparent_70%)]";
 
 /* ---------- Top-down cup illustration (no image files needed) ---------- */
@@ -125,7 +124,7 @@ function Card({ item, index, onOpen, reduce }) {
       </motion.div>
       <div className="px-6 pb-6 pt-3">
         <div className="flex items-baseline justify-between gap-3">
-          <motion.h3 layoutId={`name-${item.id}`} className="font-display text-[28px]">{item.name}</motion.h3>
+          <motion.h1 layoutId={`name-${item.id}`} className="font-display text-[28px]">{item.name}</motion.h1>
           <span className="font-semibold text-ebony">{CURRENCY}{item.price.toFixed(2)}</span>
         </div>
         <p className="mb-4 mt-2.5 text-[15px] leading-relaxed text-coffee">{item.desc}</p>
@@ -172,9 +171,9 @@ function Details({ item, onClose }) {
         </motion.div>
 
         <div className="px-6 pb-7 pt-4 md:py-11 md:pl-2 md:pr-10">
-          <motion.h3 layoutId={`name-${item.id}`} className="font-display text-[clamp(34px,5vw,46px)]">
+          <motion.h1 layoutId={`name-${item.id}`} className="font-display text-[clamp(34px,5vw,46px)]">
             {item.name}
-          </motion.h3>
+          </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}
             className="mb-4 mt-2.5 text-[15px] leading-relaxed text-coffee"
@@ -202,7 +201,7 @@ function Details({ item, onClose }) {
                 className={`${pillBtn} ${size === s.k ? "text-white" : ""}`}
               >
                 {size === s.k && (
-                  <motion.span layoutId="size-pill" transition={spring} className="absolute inset-0 rounded-full bg-ebony" />
+                  <motion.span layoutId="size-pill" transition={spring} className="absolute inset-0 rounded-full bg-coffee" />
                 )}
                 <span className="relative">{s.k}</span>
               </button>
@@ -244,9 +243,9 @@ export default function MenuCatalogue() {
   return (
     <section id="menu" className="min-h-screen px-[6vw] py-20">
       <header className="mb-12 flex flex-wrap items-end justify-between gap-6">
-        <h2 className="font-display text-[clamp(40px,6vw,72px)] leading-none">
-          Our <span className="text-ebony">Menu</span>
-        </h2>
+        <h1 className="font-display text-[clamp(40px,6vw,72px)] leading-none">
+          Our Menu
+        </h1>
         <div role="tablist" className="flex gap-1 rounded-full border border-line bg-card p-1.5">
           {FILTERS.map((f) => (
             <button
@@ -254,7 +253,7 @@ export default function MenuCatalogue() {
               className={`${pillBtn} px-[22px] ${filter === f ? "text-white" : ""}`}
             >
               {filter === f && (
-                <motion.span layoutId="tab-pill" transition={spring} className="absolute inset-0 rounded-full bg-ebony" />
+                <motion.span layoutId="tab-pill" transition={spring} className="absolute inset-0 rounded-full bg-coffee" />
               )}
               <span className="relative">{f}</span>
             </button>
