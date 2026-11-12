@@ -41,7 +41,7 @@ export default function Newsletter() {
   });
 
   return (
-    <section className="bg-card">
+    <section>
       <div className="mx-auto grid max-w-[1400px] items-center gap-8 px-[6vw] pb-10 lg:grid-cols-[1.1fr_1.3fr_auto] lg:gap-12">
         <motion.div {...fade()}>
           <h1 className="text-[clamp(30px,3.4vw,40px)] leading-tight">Stay in the Loop</h1>
@@ -63,9 +63,9 @@ export default function Newsletter() {
                 aria-describedby="newsletter-error"
                 animate={status === "error" && !reduce ? { x: [0, -8, 8, -5, 5, 0] } : { x: 0 }}
                 transition={{ duration: 0.4 }}
-                className={`h-12 w-full rounded-full border bg-old-lace/50 px-6 text-base outline-none transition-colors placeholder:text-grullo focus:ring-2 disabled:opacity-60 ${status === "error"
+                className={`h-12 w-full rounded-full border bg-grullo/10 px-6 text-base outline-none transition-colors placeholder:text-grullo focus:ring-2 disabled:opacity-60 ${status === "error"
                   ? "border-red-700/60 focus:ring-red-700/20"
-                  : "border-line focus:border-ebony focus:ring-ebony/20"
+                  : "border-coffee focus:border-coffee focus:ring-coffee focus:outline-coffee"
                   }`}
               />
             </div>

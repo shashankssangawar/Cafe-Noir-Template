@@ -151,7 +151,7 @@ export default function Contact({ heroImage, sideImage, mapEmbedSrc, onSubmit })
     <section id="contact-page">
       {/* ---------- Hero ---------- */}
       <div className="relative overflow-hidden bg-cafe-noir text-old-lace">
-        <div className="absolute top-0 right-0">
+        <div className="md:flex hidden absolute top-0 right-0">
           <img
             src={COMMON_IMAGES_LINKS.HOME.CONTACT.BACKGROUND}
             alt={COMMON_IMAGES_SEO.HOME.CONTACT.BACKGROUND}
@@ -210,7 +210,7 @@ export default function Contact({ heroImage, sideImage, mapEmbedSrc, onSubmit })
           <motion.div
             initial={{ opacity: 0, x: reduce ? 0 : -40 }} whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.9, ease }}
-            className="h-[280px] overflow-hidden rounded-3xl bg-cafe-noir md:h-auto md:min-h-[420px]"
+            className="h-[280px] overflow-hidden rounded-3xl bg-cafe-noir md:h-auto md:min-h-[420px] md:block hidden"
           >
             <img
               src={COMMON_IMAGES_LINKS.HOME.CONTACT.LATTE}

@@ -15,7 +15,7 @@ export default function OurValues({ image, imageSeo }) {
   };
 
   return (
-    <section id="values" className="relative overflow-hidden px-[6vw] py-16">
+    <section id="values" className="relative overflow-hidden px-[6vw]">
       <LeafLeftGrullo
         reduce={reduce}
         className="absolute -right-3 top-8 hidden h-[260px] lg:block"
