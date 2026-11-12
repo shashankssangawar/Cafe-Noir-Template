@@ -27,14 +27,14 @@ const contact = {
   email: "hello@cafenoir.com",
 };
 
-const today = () => new Date().toISOString().split("T")[0];
+const today = new Date().toISOString().split("T")[0];
 
 function validate(v) {
   const e = {};
   if (v.name.trim().length < 2) e.name = "Please enter your name.";
   if (!/^[+\d][\d\s()-]{6,}$/.test(v.phone.trim())) e.phone = "Enter a valid phone number.";
   if (!v.date) e.date = "Choose a date.";
-  else if (v.date < today()) e.date = "Date can’t be in the past.";
+  else if (v.date < today) e.date = "Date can’t be in the past.";
   if (!v.time) e.time = "Choose a time.";
   const g = Number(v.guests);
   if (!g || g < 1 || g > 20) e.guests = "Enter 1–20 guests.";
@@ -174,7 +174,7 @@ export default function Reservation({ onSubmit }) {
                         <input {...props("phone")} type="tel" autoComplete="tel" placeholder="(000) 00-00" />
                       </Field>
                       <Field label="Reservation Date" id="date" error={errors.date}>
-                        <input {...props("date")} type="date" min={today()} />
+                        <input {...props("date")} type="date" min={today} />
                       </Field>
                       <Field label="Reservation Time" id="time" error={errors.time}>
                         <input {...props("time")} type="time" />
