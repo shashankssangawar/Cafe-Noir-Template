@@ -36,6 +36,17 @@ export const COMMON_IMAGES_SEO = {
   GALLERY: {
     MAIN: 'Warm café interior with plants and pendant lights'
   },
+
+  // Reservations (/reservations)
+  RESERVATIONS: {
+    MAIN: 'Café terrace with wooden tables and warm lanterns'
+  },
+
+  // Contact (/contact)
+  CONTACT: {
+    MAIN: 'Warm café interior welcoming people',
+    SECTION: 'Café Noir storefront with a chalkboard sign'
+  }
 }
 
 export const COMMON_IMAGES_LINKS = {
@@ -78,4 +89,14 @@ export const COMMON_IMAGES_LINKS = {
     MAIN: '/gallery/main.jpg'
   },
 
+  // Reservations (/reservations)
+  RESERVATIONS: {
+    MAIN: '/reservations/background.jpg'
+  },
+
+  // Contact (/contact)
+  CONTACT: {
+    MAIN: '/contact/main-background.jpg',
+    SECTION: '/contact/main-section.jpg'
+  }
 }
